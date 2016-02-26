@@ -1,0 +1,4 @@
+A. When killing a mob with an axe (any axe) you have a chance that you get the corresponding mob-head
+	A. The better the axe, the higher the chance (gold is really low cause it is a really soft material)
+	B. Higher chance when hitting the head (?)
+B. "Head Hunters" enchantment to increase the chance further
