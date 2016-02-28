@@ -5,3 +5,4 @@ B. "Head Hunters" enchantment to increase the chance further
 
 Internal:
 A. Add config option to disable the killed-by-player check
+B. Add way to add heads for other mod's-mobs (?)
