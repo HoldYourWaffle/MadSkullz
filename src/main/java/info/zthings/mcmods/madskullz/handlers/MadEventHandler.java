@@ -43,9 +43,8 @@ public class MadEventHandler {
 				if (ConfigHandler.FLAG_DO_DEBUG_OUTPUT) {
 					System.out.println("Head is chopped! (rand="+String.valueOf(r)+"; chance="+String.valueOf(chopChance)+")");
 					System.out.println("Dropping head of entity: "+ev.entity.getName());
-					
-					ev.entityLiving.entityDropItem(UtilMethods.getHead(ev.entity.getName()), 1); //TODO: maybe use y-offset to really drop it from the head?
 				}
+				ev.entityLiving.entityDropItem(UtilMethods.getHead(ev.entity), 1); //TODO: maybe use y-offset to really drop it from the head?
 			} else {
 				//NO CHOP :(
 				if (ConfigHandler.FLAG_DO_DEBUG_OUTPUT) System.out.println("Head wasn't chopped :( (rand="+String.valueOf(r)+"; chance="+String.valueOf(chopChance)+")");
