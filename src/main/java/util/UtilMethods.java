@@ -4,6 +4,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
+import info.zthings.mcmods.madskullz.common.Ref;
 import info.zthings.mcmods.madskullz.handlers.ConfigHandler;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.monster.EntityCreeper;
@@ -48,7 +49,7 @@ public abstract class UtilMethods {
 		} else { //no ingame-skull --> look user up in register
 			NBTTagCompound nbt = new NBTTagCompound();
 			stack = new ItemStack(Items.skull, 1, 3);
-			//nbt.setString("SkullOwner", sko);
+			nbt.setString("SkullOwner", "MHF_"+entity.getName().replace(" ", ""));
 			stack.setTagCompound(nbt);
 		}
 		return stack;
