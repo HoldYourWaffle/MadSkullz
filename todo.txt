@@ -2,3 +2,6 @@ A. When killing a mob with an axe (any axe) you have a chance that you get the c
 	A. The better the axe, the higher the chance (gold is really low cause it is a really soft material)
 	B. Higher chance when hitting the head (?)
 B. "Head Hunters" enchantment to increase the chance further
+
+Internal:
+A. Add config option to disable the killed-by-player check
