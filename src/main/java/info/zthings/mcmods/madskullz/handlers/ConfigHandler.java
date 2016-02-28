@@ -10,17 +10,19 @@ public class ConfigHandler {
 	private static Configuration cfg;
 	
 	public static boolean FLAG_DO_DEBUG_OUTPUT;
-	public static int NO_CHOPPER_CHANCE;
+	
+	public static int INT_NO_CHOPPER_CHANCE;
 	
 	public static void init(File cfgFile) {
 		Configuration config = new Configuration(cfgFile);
         config.load();
-
+        Property bufferProp;
+        
         FLAG_DO_DEBUG_OUTPUT = config.get(Configuration.CATEGORY_GENERAL, "DoDebugOutput", false).getBoolean(false);
         
-        Property prop = config.get("Chances", "NoChopChance", 1);
-        prop.comment = "Configuration settings for rarity in percentages\r\n\r\n"
-        			 + "Chances for dropping a head with a non-chopping tool";
+        bufferProp = config.get("Chances", "NoChopperChance", 100);
+        bufferProp.comment = "Chances for dropping a head with a non-chopping tool (percentage)";
+        INT_NO_CHOPPER_CHANCE = bufferProp.getInt();
         
         config.save();
 	}
