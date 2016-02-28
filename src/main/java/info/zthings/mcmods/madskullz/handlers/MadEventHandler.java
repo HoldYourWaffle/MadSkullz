@@ -1,5 +1,7 @@
 package info.zthings.mcmods.madskullz.handlers;
 
+import info.zthings.mcmods.madskullz.common.Ref;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.DamageSource;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
@@ -11,21 +13,19 @@ public class MadEventHandler {
 	public void onMobDeath(LivingDropsEvent ev) {
 		if (ConfigHandler.FLAG_DO_DEBUG_OUTPUT) {
 			System.out.println();
-			System.out.println(UtilMethods.DEBUG_SEPERATOR);
+			System.out.println(Ref.DEBUG_SEPERATOR);
 			System.out.println("DamageType: " + ev.source.damageType);
 			System.out.println("Source: " + ev.source.getSourceOfDamage());
-			if (ev.source.getEntity() instanceof EntityPlayer) {
-				System.out.println("Source weapon: " + ((EntityPlayer)ev.source.getEntity()).getCurrentEquippedItem().getItem().getUnlocalizedName() );
-			}
 			if (ev.source.getEntity() != null) {
 				System.out.println("Source entity: " + ev.source.getEntity().getName());
 			}
+			System.out.println();
 		}
 		
 		DamageSource s = ev.source;
 		if (s.getEntity() == null && ConfigHandler.FLAG_DO_DEBUG_OUTPUT) {
 			System.out.println("Mob was killed by something other than an entity (by "+s.getDamageType()+"), abort event handling");
-			System.out.println(UtilMethods.DEBUG_SEPERATOR); //close seperator
+			System.out.println(Ref.DEBUG_SEPERATOR); //close seperator
 			return;
 		}
 		
@@ -43,6 +43,8 @@ public class MadEventHandler {
 				if (ConfigHandler.FLAG_DO_DEBUG_OUTPUT) {
 					System.out.println("Head is chopped! (rand="+String.valueOf(r)+"; chance="+String.valueOf(chopChance)+")");
 					System.out.println("Dropping head of entity: "+ev.entity.getName());
+					
+					ev.entityLiving.entityDropItem(UtilMethods.getHead(ev.entity.getName()), 1); //TODO: maybe use y-offset to really drop it from the head?
 				}
 			} else {
 				//NO CHOP :(
@@ -52,6 +54,6 @@ public class MadEventHandler {
 			if (ConfigHandler.FLAG_DO_DEBUG_OUTPUT) System.out.println("Mob was killed by an other entity than player (by "+s.getEntity().getName()+")");
 		}
 		
-		if (ConfigHandler.FLAG_DO_DEBUG_OUTPUT) System.out.println(UtilMethods.DEBUG_SEPERATOR);
+		if (ConfigHandler.FLAG_DO_DEBUG_OUTPUT) System.out.println(Ref.DEBUG_SEPERATOR);
 	}
 }

@@ -16,6 +16,7 @@ public class MadSkullz {
     	MinecraftForge.EVENT_BUS.register(evHandler);
     	
     	ConfigHandler.init(ev.getSuggestedConfigurationFile());
+    	Ref.init();
     }
 
 }
