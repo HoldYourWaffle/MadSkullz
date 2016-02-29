@@ -1,12 +1,12 @@
 package info.zthings.mcmods.madskullz.handlers;
 
 import info.zthings.mcmods.madskullz.common.Ref;
+import info.zthings.mcmods.madskullz.util.UtilMethods;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.DamageSource;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import util.UtilMethods;
 
 public class MadEventHandler {
 	@SubscribeEvent

@@ -1,4 +1,4 @@
-package util;
+package info.zthings.mcmods.madskullz.util;
 
 import java.io.DataInput;
 import java.io.DataOutput;
