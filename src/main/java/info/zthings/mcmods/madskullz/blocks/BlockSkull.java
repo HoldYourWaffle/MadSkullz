@@ -14,4 +14,19 @@ public class BlockSkull extends Block {
 		/*this.setHardness(hardness);
 		this.setResistance(resistance);*/
 	}
+	
+	@Override
+	public boolean isFullCube() {
+		return false;
+	}
+	
+	@Override
+	public boolean isFullBlock() {
+		return false;
+	}
+	
+	@Override
+	public boolean isOpaqueCube() {
+		return false;
+	}
 }
