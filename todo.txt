@@ -6,6 +6,8 @@ A. When killing a mob with an axe (any axe) you have a chance that you get the c
 B. "Head Hunters" enchantment to increase the chance further
 
 Internal:
+*A. Update to new DEBUG-system
+ '--> Integrate into templates
 A. Add config option to disable the killed-by-player check
 B. Add way to add heads for other mod's-mobs (?)
 C. Fix slimes (only with the little ones)
