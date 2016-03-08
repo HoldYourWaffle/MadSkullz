@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "madskullz",
+  "name": "Mad Skullz",
+  "description": "Mod that let you get mob skulls in survival",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["ShadowCoder69"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
