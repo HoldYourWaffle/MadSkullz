@@ -215,18 +215,8 @@ pip-log.txt
 .mr.developer.cfg
 *.gradle
 CREDITS-fml.txt
-forge-1.8-11.14.0.1262-1.8-changelog.txt
-gradle/wrapper/gradle-wrapper.jar
-gradle/wrapper/gradle-wrapper.properties
 gradlew
 gradlew.bat
-LICENSE-fml.txt
-MinecraftForge-Credits.txt
-MinecraftForge-License.txt
-README.txt
-build.bat
-setup eclipse.bat
-setup workspace.bat
 *.gen
 *.fdt
 *.fdx
@@ -249,18 +239,10 @@ SNAPSHOT/resolver-status.properties
 SNAPSHOT/_remote.repositories
 eclipse/
 build/
-clean.bat
-forge-1.8-11.14.3.1502-changelog.txt
-Build Mod.bat
-1.8/Paulscode IBXM Library License.txt
-1.8/forge-1.8-11.14.4.1577-changelog.txt
 gradle/
-1.8/models/
-1.8.9/forge-1.8.9-11.15.0.1695-changelog.txt
-1.8.9/Paulscode IBXM Library License.txt
-1.8.9/Paulscode SoundSystem CodecIBXM License.txt
-todo_dirt.txt
-DIRT
+
+
 buildMod.bat
 buildWorkspace.bat
 build-log.txt
+todo.txt
