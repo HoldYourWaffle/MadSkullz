@@ -215,18 +215,8 @@ pip-log.txt
 .mr.developer.cfg
 *.gradle
 CREDITS-fml.txt
-forge-1.8-11.14.0.1262-1.8-changelog.txt
-gradle/wrapper/gradle-wrapper.jar
-gradle/wrapper/gradle-wrapper.properties
 gradlew
 gradlew.bat
-LICENSE-fml.txt
-MinecraftForge-Credits.txt
-MinecraftForge-License.txt
-README.txt
-build.bat
-setup eclipse.bat
-setup workspace.bat
 *.gen
 *.fdt
 *.fdx
@@ -249,7 +239,10 @@ SNAPSHOT/resolver-status.properties
 SNAPSHOT/_remote.repositories
 eclipse/
 build/
-clean.bat
-forge-1.8-11.14.3.1502-changelog.txt
-buildWorkspace.bat
+gradle/
+
+
 buildMod.bat
+buildWorkspace.bat
+build-log.txt
+todo.txt
