@@ -1,0 +1,4 @@
+MC version: 1.8
+Used forge version: 1.8-11.14.4.1563
+FSC-Version: 
+Mod version: 
