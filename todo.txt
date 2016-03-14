@@ -8,8 +8,10 @@ B. "Head Hunters" enchantment to increase the chance further
 Internal:
 *A. Update to new DEBUG-system
  '--> Integrate into templates
-A. Add config option to disable the killed-by-player check
-B. Add way to add heads for other mod's-mobs (?)
+A. Integrate FSC
+'--> Add config option to disable the killed-by-player check
+'--> Add chance to get a steve/alex/herobrine head from any mob [set chance in config]
+'--> Add way to add heads for other mod's-mobs using injecting (?)
+
 C. Fix slimes (only with the little ones)
-D. Add chance to get a steve/alex/herobrine head from any mob (includes players) [set chance in config]
 E. Disable bow as a chance for chop by default (?)
