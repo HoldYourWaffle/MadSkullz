@@ -1,4 +1,4 @@
-#####THIS MOD IS STILL IN BETA, CHECK THE [own-skull-block](https://github.com/ShadowCoder69/MadSkullz/tree/own-skull-block) BRANCH FOR THE MOST RECENT VERSION
+#####THIS MOD IS STILL IN BETA, THIS IS THE MOST RECENT VERSION BUT IT _WILL_ CONTAIN UNFINISHED/UNSTABLE FEATURES!
 
 # MadSkullz
 Minecraft mod that lets you get mob-skulls in survival.
