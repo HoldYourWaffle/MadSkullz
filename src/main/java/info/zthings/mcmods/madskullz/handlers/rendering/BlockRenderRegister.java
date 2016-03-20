@@ -1,4 +1,4 @@
-package rendering;
+package info.zthings.mcmods.madskullz.handlers.rendering;
 
 import info.zthings.mcmods.madskullz.common.Ref;
 

@@ -1,7 +1,7 @@
 package info.zthings.mcmods.madskullz.proxies;
 
-import rendering.BlockRenderRegister;
-import rendering.ItemRenderRegister;
+import info.zthings.mcmods.madskullz.handlers.rendering.BlockRenderRegister;
+import info.zthings.mcmods.madskullz.handlers.rendering.ItemRenderRegister;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
