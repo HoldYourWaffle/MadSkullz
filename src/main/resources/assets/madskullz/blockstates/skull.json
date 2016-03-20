@@ -1,5 +1,6 @@
 {
     "variants": {
-        "normal": { "model": "madskullz:skull" }
+        "type=white": { "model":"madskullz:block_properties_white" },
+        "type=black": { "model":"madskullz:block_properties_black" }
     }
 }
