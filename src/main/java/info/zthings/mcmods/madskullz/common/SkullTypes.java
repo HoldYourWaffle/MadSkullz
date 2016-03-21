@@ -3,8 +3,8 @@ package info.zthings.mcmods.madskullz.common;
 import net.minecraft.util.IStringSerializable;
 
 public enum SkullTypes implements IStringSerializable {
-    WHITE(0, "white"),
-    BLACK(1, "black");
+    MOB(0, "MOB"),
+    PLAYER(1, "PLAYER");
 
     private int ID;
     private String name;

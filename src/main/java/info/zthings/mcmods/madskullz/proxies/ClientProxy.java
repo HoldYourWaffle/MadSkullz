@@ -15,15 +15,14 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void preInit(FMLPreInitializationEvent e) {
 		super.preInit(e);
-		ModelBakery.addVariantName(Item.getItemFromBlock(MadSkullz.skullBlock), "madskullz:block_properties_black", "madskullz:block_properties_white");
+		ModelBakery.addVariantName(Item.getItemFromBlock(MadSkullz.skullBlock), "madskullz:mob", "madskullz:player");
 	}
 
 	@Override
 	public void init(FMLInitializationEvent e) {
 		super.init(e);
-		//Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(MadSkullz.skullBlock), 0, new ModelResourceLocation(Ref.MODID + ":" + MadSkullz.skullBlock.getUnlocalizedName().substring(5), "inventory"));
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(MadSkullz.skullBlock), 0, new ModelResourceLocation(Ref.MODID + ":block_properties_white", "inventory"));
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(MadSkullz.skullBlock), 1, new ModelResourceLocation(Ref.MODID + ":block_properties_black", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(MadSkullz.skullBlock), 0, new ModelResourceLocation(Ref.MODID + ":mob", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(MadSkullz.skullBlock), 1, new ModelResourceLocation(Ref.MODID + ":player", "inventory"));
 	}
 
 	@Override

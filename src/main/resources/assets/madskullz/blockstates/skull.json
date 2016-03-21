@@ -1,6 +1,6 @@
 {
     "variants": {
-        "type=white": { "model":"madskullz:block_properties_white" },
-        "type=black": { "model":"madskullz:block_properties_black" }
+        "type=mob": { "model":"madskullz:mob" },
+        "type=player": { "model":"madskullz:player" }
     }
 }
