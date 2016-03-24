@@ -1,6 +1,5 @@
 package info.zthings.mcmods.madskullz.proxies;
 
-import info.zthings.mcmods.madskullz.items.ModItems;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

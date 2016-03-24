@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Ref.MODID, version = Ref.VERSION, name = "MadSkullz")
 public class MadSkullz {
@@ -23,7 +24,7 @@ public class MadSkullz {
     	MinecraftForge.EVENT_BUS.register(evHandler);
     	
     	ConfigHandler.init(ev.getSuggestedConfigurationFile());
-    	Ref.init();
+    	GameRegistry.registerBlock(Ref.blockSkull, Ref.blockSkull.getUnlocalizedName().substring(5));
     	
     	proxy.preInit(ev);
     }
