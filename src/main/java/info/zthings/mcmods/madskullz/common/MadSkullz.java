@@ -1,5 +1,6 @@
 package info.zthings.mcmods.madskullz.common;
 
+import info.zthings.mcmods.madskullz.blocks.TileEntitySkull;
 import info.zthings.mcmods.madskullz.handlers.ConfigHandler;
 import info.zthings.mcmods.madskullz.handlers.MadEventHandler;
 import info.zthings.mcmods.madskullz.proxies.CommonProxy;
@@ -24,7 +25,9 @@ public class MadSkullz {
     	MinecraftForge.EVENT_BUS.register(evHandler);
     	
     	ConfigHandler.init(ev.getSuggestedConfigurationFile());
+    	
     	GameRegistry.registerBlock(Ref.blockSkull, Ref.blockSkull.getUnlocalizedName().substring(5));
+    	GameRegistry.registerTileEntity(TileEntitySkull.class, Ref.MODID + ":skull_tile_entity");
     	
     	proxy.preInit(ev);
     }
