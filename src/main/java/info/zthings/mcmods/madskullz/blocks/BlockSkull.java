@@ -23,7 +23,7 @@ public class BlockSkull extends Block implements IMetaBlockName {
 		this.setUnlocalizedName("skull");
 		this.setCreativeTab(CreativeTabs.tabDecorations);
 		this.setBlockBounds(0.25F, 0.0F, 0.25F, 0.75F, 0.5F, 0.75F);
-		this.setDefaultState(this.blockState.getBaseState().withProperty(TYPE, SkullTypes.MOB));
+		this.setDefaultState(this.blockState.getBaseState().withProperty(TYPE, SkullTypes.WHITE));
 	}
 	
 	@Override
@@ -48,7 +48,7 @@ public class BlockSkull extends Block implements IMetaBlockName {
 	
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
-	    return getDefaultState().withProperty(TYPE, meta == 0 ? SkullTypes.MOB : SkullTypes.PLAYER);
+	    return getDefaultState().withProperty(TYPE, meta == 0 ? SkullTypes.WHITE : SkullTypes.BLACK);
 	}
 
 	@Override
@@ -64,7 +64,7 @@ public class BlockSkull extends Block implements IMetaBlockName {
 	
 	@Override
 	public String getSpecialName(ItemStack stack) {
-	    return stack.getItemDamage() == 0 ? "mob" : "player";
+	    return stack.getItemDamage() == 0 ? "white" : "black";
 	}
 	
 	@Override
